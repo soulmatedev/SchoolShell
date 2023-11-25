@@ -9,6 +9,16 @@
       Title="HeadTeacherPage">
 
     <Grid Background="White">
-        <TextBlock>HeadTeacher</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical">
+            <TextBlock>HeadTeacher</TextBlock>
+            <Button Content="Добавить" Click="Button_Click"/>
+            <Button Content="Удалить" Click="Button_Delete" />
+            <Button Content="Изменить" Click="OnClickEdit"/>
+        </StackPanel>
     </Grid>
 </Page>

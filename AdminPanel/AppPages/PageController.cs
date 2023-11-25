@@ -17,7 +17,9 @@ namespace AdminPanel.AppPages
         public static SchoolShell schoolShell;
         private static Authorization authorization;
         private static TeacherPage teacherPage;
+        private static HeadTeacherPage headTeacherPage;
         public static UserCreator userCreator;
+        private static UserEdit userEditor;
 
         public static AdminCreator AdminCreator
 
@@ -82,6 +84,30 @@ namespace AdminPanel.AppPages
             }
         }
 
+        public static UserEdit UserEditor
+        {
+            get
+            {
+                if (userEditor == null)
+                {
+                    userEditor = new UserEdit(Database);
+                }
+                return userEditor;
+            }
+        }
+
+        public static HeadTeacherPage HeadTeacherPage
+        {
+            get
+            {
+                if(headTeacherPage == null)
+                {
+                    headTeacherPage = new HeadTeacherPage();
+                }
+                return headTeacherPage;
+            }
+        }
+
         public static void Reset()
         {
             database = null;
@@ -89,6 +115,8 @@ namespace AdminPanel.AppPages
             schoolShell = null;
             teacherPage = null;
             userCreator = null;
+            userEditor = null;
+            headTeacherPage = null;
         }
 
         private static Database.SchoolShellEntities Database

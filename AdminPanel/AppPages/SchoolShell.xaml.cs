@@ -45,5 +45,19 @@ namespace AdminPanel.AppPages
             database.Accounts.Remove(selectedAccount);
             database.SaveChanges();
         }
+
+        public void Change(Database.Account account)
+        {
+            PageController.UserEditor.SetAccount(account);
+            NavigationService.Navigate(PageController.UserEditor);
+        }
+
+        private void OnClickEdit(object sender, RoutedEventArgs e)
+        {
+            var selectedAccount = GetSelected();
+            if (selectedAccount == null) return;
+
+            Change(selectedAccount);
+        }
     }
 }   

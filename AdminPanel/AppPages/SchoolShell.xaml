@@ -37,7 +37,7 @@
         <StackPanel Grid.Row="2">
             <Button Content="Добавить" Click="Button_Click"/>
             <Button Content="Удалить" Click="Button_Delete" />
-            <Button Content="Изменить"/>
+            <Button Content="Изменить" Click="OnClickEdit"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -19,6 +19,10 @@ namespace AdminPanel.AppPages
     {
         private readonly Database.SchoolShellEntities database;
         public Database.Account Account { get; set; }
+        const int ROLE_ID_ADMIN = 1;
+        const int ROLE_ID_STUDENT = 2;
+        const int ROLE_ID_HEADTEACHER = 3;
+        const int ROLE_ID_TEACHER = 4;
         public Authorization(Database.SchoolShellEntities entities)
         {
             InitializeComponent();
@@ -37,11 +41,18 @@ namespace AdminPanel.AppPages
 
             Account.username = tbUsername.Text.Trim();
             Account.password = tbPassword.Text.Trim();
-            Account.roleId = 1;
 
-            if (MainWindow.connection.Accounts.Any(x => x.username == Account.username && x.password == Account.password))
+            if (database.Accounts.FirstOrDefault(x => x.username == Account.username && x.password == Account.password && x.roleId == ROLE_ID_ADMIN) != null)
             {
                 MainWindow.pageContainer.Navigate(PageController.SchoolShell);
+            }
+            else if (database.Accounts.FirstOrDefault(x => x.username == Account.username && x.password == Account.password && x.roleId == ROLE_ID_TEACHER) != null)
+            {
+                MainWindow.pageContainer.Navigate(PageController.TeacherPage);
+            }
+            else if (database.Accounts.FirstOrDefault(x => x.username == Account.username && x.password == Account.password && x.roleId == ROLE_ID_HEADTEACHER) != null)
+            {
+                MainWindow.pageContainer.Navigate(PageController.HeadTeacherPage);
             }
             else
             {

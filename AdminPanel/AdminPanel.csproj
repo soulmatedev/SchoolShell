@@ -68,6 +68,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AppPages\HeadTeacherPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AppPages\SchoolShell.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AppPages\UserCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AppPages\UserEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,6 +104,9 @@
     <Compile Include="AppPages\Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AppPages\HeadTeacherPage.xaml.cs">
+      <DependentUpon>HeadTeacherPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AppPages\PageController.cs" />
     <Compile Include="AppPages\SchoolShell.xaml.cs">
       <DependentUpon>SchoolShell.xaml</DependentUpon>
@@ -105,6 +116,9 @@
     </Compile>
     <Compile Include="AppPages\UserCreator.xaml.cs">
       <DependentUpon>UserCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppPages\UserEdit.xaml.cs">
+      <DependentUpon>UserEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppWindow\AdminCreator.xaml.cs">
       <DependentUpon>AdminCreator.xaml</DependentUpon>

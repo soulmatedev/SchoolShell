@@ -41,10 +41,7 @@
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock>                                    
-                            <Run Text="{Binding role_name}"/>
-
-                        <LineBreak />
-
+                                    <Run Text="{Binding name}"/>
                                 </TextBlock>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>

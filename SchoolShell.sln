@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{73DE8067-F3D0-4E3B-A5BA-DC681A2C08C8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminPanel", "AdminPanel\AdminPanel.csproj", "{0ADE4523-0FFF-40D8-A538-81CF4AB40DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database\Database.csproj", "{A8568061-D497-4519-AEE7-F92F371AD5D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73DE8067-F3D0-4E3B-A5BA-DC681A2C08C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73DE8067-F3D0-4E3B-A5BA-DC681A2C08C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73DE8067-F3D0-4E3B-A5BA-DC681A2C08C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73DE8067-F3D0-4E3B-A5BA-DC681A2C08C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0ADE4523-0FFF-40D8-A538-81CF4AB40DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0ADE4523-0FFF-40D8-A538-81CF4AB40DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADE4523-0FFF-40D8-A538-81CF4AB40DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADE4523-0FFF-40D8-A538-81CF4AB40DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8568061-D497-4519-AEE7-F92F371AD5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8568061-D497-4519-AEE7-F92F371AD5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8568061-D497-4519-AEE7-F92F371AD5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8568061-D497-4519-AEE7-F92F371AD5D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

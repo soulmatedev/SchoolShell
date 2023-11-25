@@ -16,15 +16,34 @@ namespace AdminPanel.AppPages
             database = entities;
 
             Binding binding = new Binding();
-            binding.Source = MainWindow.Accounts.Where(x => x.Role.name != "Студент");
+            var accounts = database.Accounts.Where(x => x.Role.name != "Студент").ToList();
+            foreach(var account in accounts)
+            {
+                MainWindow.Accounts.Add(account);
+            }
+            binding.Source = MainWindow.Accounts;
             lvAccounts.SetBinding(ListView.ItemsSourceProperty, binding);
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public Database.Account GetSelected()
         {
-            MainWindow.pageContainer.Navigate(PageController.userCreator);
+            return lvAccounts.SelectedItem as Database.Account;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.pageContainer.Navigate(PageController.UserCreator);
+        }
+
+        private void Button_Delete(object sender, RoutedEventArgs e)
+        {
+            var selectedAccount = GetSelected();
+            if (selectedAccount == null) return;
+            MainWindow.Accounts.Remove(selectedAccount);
+
+            database.Accounts.Remove(selectedAccount);
+            database.SaveChanges();
+        }
     }
-}
+}   

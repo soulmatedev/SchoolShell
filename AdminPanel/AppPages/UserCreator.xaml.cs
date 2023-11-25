@@ -20,6 +20,7 @@ namespace AdminPanel.AppPages
     {
         private readonly Database.SchoolShellEntities database;
         public Database.Account Account { get; set; }
+        public Database.Role Role { get; set; }
         public UserCreator(Database.SchoolShellEntities entities)
         {
             InitializeComponent();
@@ -27,8 +28,9 @@ namespace AdminPanel.AppPages
 
             MainWindow.connection = new Database.SchoolShellEntities();
             Account = new Database.Account();
+            Role = new Database.Role();
             Binding binding = new Binding();
-            binding.Source = MainWindow.Role.ToList();
+            binding.Source = database.Roles.ToList();
             cbRole.SetBinding(ListView.ItemsSourceProperty, binding);
         }
 

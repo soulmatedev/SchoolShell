@@ -159,7 +159,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="text" Type="nvarchar" MaxLength="255" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Account__roleId__0F624AF8">
+        <Association Name="FK__Account__roleId__7ABC33CD">
           <End Role="Role" Type="Self.Role" Multiplicity="1" />
           <End Role="Account" Type="Self.Account" Multiplicity="*" />
           <ReferentialConstraint>
@@ -171,7 +171,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Answer__executio__47A6A41B">
+        <Association Name="FK__Answer__executio__1C1D2798">
           <End Role="ExecutionAttempt" Type="Self.ExecutionAttempt" Multiplicity="1" />
           <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
           <ReferentialConstraint>
@@ -183,7 +183,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Answer__question__489AC854">
+        <Association Name="FK__Answer__question__1D114BD1">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
           <ReferentialConstraint>
@@ -195,7 +195,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__AnswerVar__answe__4D5F7D71">
+        <Association Name="FK__AnswerVar__answe__21D600EE">
           <End Role="Answer" Type="Self.Answer" Multiplicity="1" />
           <End Role="AnswerVariant" Type="Self.AnswerVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -207,7 +207,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__AnswerVar__varia__4E53A1AA">
+        <Association Name="FK__AnswerVar__varia__22CA2527">
           <End Role="Variant" Type="Self.Variant" Multiplicity="1" />
           <End Role="AnswerVariant" Type="Self.AnswerVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -219,7 +219,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Execution__testA__395884C4">
+        <Association Name="FK__Execution__testA__147C05D0">
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="1" />
           <End Role="ExecutionAttempt" Type="Self.ExecutionAttempt" Multiplicity="*" />
           <ReferentialConstraint>
@@ -231,7 +231,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Question__type__44CA3770">
+        <Association Name="FK__Question__type__1940BAED">
           <End Role="QuestionType" Type="Self.QuestionType" Multiplicity="1" />
           <End Role="Question" Type="Self.Question" Multiplicity="*" />
           <ReferentialConstraint>
@@ -243,7 +243,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__QuestionV__quest__55009F39">
+        <Association Name="FK__QuestionV__quest__297722B6">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="QuestionVariant" Type="Self.QuestionVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -255,7 +255,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__QuestionV__varia__55F4C372">
+        <Association Name="FK__QuestionV__varia__2A6B46EF">
           <End Role="Variant" Type="Self.Variant" Multiplicity="1" />
           <End Role="QuestionVariant" Type="Self.QuestionVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -267,7 +267,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__group__14270015">
+        <Association Name="FK__Student__group__7F80E8EA">
           <End Role="Group" Type="Self.Group" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -279,7 +279,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__role__151B244E">
+        <Association Name="FK__Student__role__00750D23">
           <End Role="Role" Type="Self.Role" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -291,7 +291,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__StudyProg__group__2180FB33">
+        <Association Name="FK__StudyProg__group__0539C240">
           <End Role="Group" Type="Self.Group" Multiplicity="1" />
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="*" />
           <ReferentialConstraint>
@@ -303,7 +303,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__StudyProg__subje__22751F6C">
+        <Association Name="FK__StudyProg__subje__062DE679">
           <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="*" />
           <ReferentialConstraint>
@@ -315,7 +315,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TeacherWo__progr__2645B050">
+        <Association Name="FK__TeacherWo__progr__09FE775D">
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="1" />
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="*" />
           <ReferentialConstraint>
@@ -327,7 +327,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TeacherWo__teach__25518C17">
+        <Association Name="FK__TeacherWo__teach__090A5324">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="*" />
           <ReferentialConstraint>
@@ -339,7 +339,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Test__teacher__31B762FC">
+        <Association Name="FK__Test__teacher__0CDAE408">
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="1" />
           <End Role="Test" Type="Self.Test" Multiplicity="*" />
           <ReferentialConstraint>
@@ -351,7 +351,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__numbe__3493CFA7">
+        <Association Name="FK__TestAppoi__numbe__0FB750B3">
           <End Role="Test" Type="Self.Test" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -363,7 +363,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__respo__367C1819">
+        <Association Name="FK__TestAppoi__respo__119F9925">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -375,7 +375,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__stude__3587F3E0">
+        <Association Name="FK__TestAppoi__stude__10AB74EC">
           <End Role="Student" Type="Self.Student" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -387,7 +387,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestQuest__quest__5224328E">
+        <Association Name="FK__TestQuest__quest__269AB60B">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="TestQuestion" Type="Self.TestQuestion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -399,7 +399,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestQuesti__test__51300E55">
+        <Association Name="FK__TestQuesti__test__25A691D2">
           <End Role="Test" Type="Self.Test" Multiplicity="1" />
           <End Role="TestQuestion" Type="Self.TestQuestion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -429,87 +429,87 @@
           <EntitySet Name="TestAppointment" EntityType="Self.TestAppointment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TestQuestion" EntityType="Self.TestQuestion" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Variant" EntityType="Self.Variant" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Account__roleId__0F624AF8" Association="Self.FK__Account__roleId__0F624AF8">
+          <AssociationSet Name="FK__Account__roleId__7ABC33CD" Association="Self.FK__Account__roleId__7ABC33CD">
             <End Role="Role" EntitySet="Role" />
             <End Role="Account" EntitySet="Account" />
           </AssociationSet>
-          <AssociationSet Name="FK__Answer__executio__47A6A41B" Association="Self.FK__Answer__executio__47A6A41B">
+          <AssociationSet Name="FK__Answer__executio__1C1D2798" Association="Self.FK__Answer__executio__1C1D2798">
             <End Role="ExecutionAttempt" EntitySet="ExecutionAttempt" />
             <End Role="Answer" EntitySet="Answer" />
           </AssociationSet>
-          <AssociationSet Name="FK__Answer__question__489AC854" Association="Self.FK__Answer__question__489AC854">
+          <AssociationSet Name="FK__Answer__question__1D114BD1" Association="Self.FK__Answer__question__1D114BD1">
             <End Role="Question" EntitySet="Question" />
             <End Role="Answer" EntitySet="Answer" />
           </AssociationSet>
-          <AssociationSet Name="FK__AnswerVar__answe__4D5F7D71" Association="Self.FK__AnswerVar__answe__4D5F7D71">
+          <AssociationSet Name="FK__AnswerVar__answe__21D600EE" Association="Self.FK__AnswerVar__answe__21D600EE">
             <End Role="Answer" EntitySet="Answer" />
             <End Role="AnswerVariant" EntitySet="AnswerVariant" />
           </AssociationSet>
-          <AssociationSet Name="FK__AnswerVar__varia__4E53A1AA" Association="Self.FK__AnswerVar__varia__4E53A1AA">
+          <AssociationSet Name="FK__AnswerVar__varia__22CA2527" Association="Self.FK__AnswerVar__varia__22CA2527">
             <End Role="Variant" EntitySet="Variant" />
             <End Role="AnswerVariant" EntitySet="AnswerVariant" />
           </AssociationSet>
-          <AssociationSet Name="FK__Execution__testA__395884C4" Association="Self.FK__Execution__testA__395884C4">
+          <AssociationSet Name="FK__Execution__testA__147C05D0" Association="Self.FK__Execution__testA__147C05D0">
             <End Role="TestAppointment" EntitySet="TestAppointment" />
             <End Role="ExecutionAttempt" EntitySet="ExecutionAttempt" />
           </AssociationSet>
-          <AssociationSet Name="FK__Question__type__44CA3770" Association="Self.FK__Question__type__44CA3770">
+          <AssociationSet Name="FK__Question__type__1940BAED" Association="Self.FK__Question__type__1940BAED">
             <End Role="QuestionType" EntitySet="QuestionType" />
             <End Role="Question" EntitySet="Question" />
           </AssociationSet>
-          <AssociationSet Name="FK__QuestionV__quest__55009F39" Association="Self.FK__QuestionV__quest__55009F39">
+          <AssociationSet Name="FK__QuestionV__quest__297722B6" Association="Self.FK__QuestionV__quest__297722B6">
             <End Role="Question" EntitySet="Question" />
             <End Role="QuestionVariant" EntitySet="QuestionVariant" />
           </AssociationSet>
-          <AssociationSet Name="FK__QuestionV__varia__55F4C372" Association="Self.FK__QuestionV__varia__55F4C372">
+          <AssociationSet Name="FK__QuestionV__varia__2A6B46EF" Association="Self.FK__QuestionV__varia__2A6B46EF">
             <End Role="Variant" EntitySet="Variant" />
             <End Role="QuestionVariant" EntitySet="QuestionVariant" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__group__14270015" Association="Self.FK__Student__group__14270015">
+          <AssociationSet Name="FK__Student__group__7F80E8EA" Association="Self.FK__Student__group__7F80E8EA">
             <End Role="Group" EntitySet="Group" />
             <End Role="Student" EntitySet="Student" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__role__151B244E" Association="Self.FK__Student__role__151B244E">
+          <AssociationSet Name="FK__Student__role__00750D23" Association="Self.FK__Student__role__00750D23">
             <End Role="Role" EntitySet="Role" />
             <End Role="Student" EntitySet="Student" />
           </AssociationSet>
-          <AssociationSet Name="FK__StudyProg__group__2180FB33" Association="Self.FK__StudyProg__group__2180FB33">
+          <AssociationSet Name="FK__StudyProg__group__0539C240" Association="Self.FK__StudyProg__group__0539C240">
             <End Role="Group" EntitySet="Group" />
             <End Role="StudyProgram" EntitySet="StudyProgram" />
           </AssociationSet>
-          <AssociationSet Name="FK__StudyProg__subje__22751F6C" Association="Self.FK__StudyProg__subje__22751F6C">
+          <AssociationSet Name="FK__StudyProg__subje__062DE679" Association="Self.FK__StudyProg__subje__062DE679">
             <End Role="Subject" EntitySet="Subject" />
             <End Role="StudyProgram" EntitySet="StudyProgram" />
           </AssociationSet>
-          <AssociationSet Name="FK__TeacherWo__progr__2645B050" Association="Self.FK__TeacherWo__progr__2645B050">
+          <AssociationSet Name="FK__TeacherWo__progr__09FE775D" Association="Self.FK__TeacherWo__progr__09FE775D">
             <End Role="StudyProgram" EntitySet="StudyProgram" />
             <End Role="TeacherWorkload" EntitySet="TeacherWorkload" />
           </AssociationSet>
-          <AssociationSet Name="FK__TeacherWo__teach__25518C17" Association="Self.FK__TeacherWo__teach__25518C17">
+          <AssociationSet Name="FK__TeacherWo__teach__090A5324" Association="Self.FK__TeacherWo__teach__090A5324">
             <End Role="Account" EntitySet="Account" />
             <End Role="TeacherWorkload" EntitySet="TeacherWorkload" />
           </AssociationSet>
-          <AssociationSet Name="FK__Test__teacher__31B762FC" Association="Self.FK__Test__teacher__31B762FC">
+          <AssociationSet Name="FK__Test__teacher__0CDAE408" Association="Self.FK__Test__teacher__0CDAE408">
             <End Role="TeacherWorkload" EntitySet="TeacherWorkload" />
             <End Role="Test" EntitySet="Test" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__numbe__3493CFA7" Association="Self.FK__TestAppoi__numbe__3493CFA7">
+          <AssociationSet Name="FK__TestAppoi__numbe__0FB750B3" Association="Self.FK__TestAppoi__numbe__0FB750B3">
             <End Role="Test" EntitySet="Test" />
             <End Role="TestAppointment" EntitySet="TestAppointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__respo__367C1819" Association="Self.FK__TestAppoi__respo__367C1819">
+          <AssociationSet Name="FK__TestAppoi__respo__119F9925" Association="Self.FK__TestAppoi__respo__119F9925">
             <End Role="Account" EntitySet="Account" />
             <End Role="TestAppointment" EntitySet="TestAppointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__stude__3587F3E0" Association="Self.FK__TestAppoi__stude__3587F3E0">
+          <AssociationSet Name="FK__TestAppoi__stude__10AB74EC" Association="Self.FK__TestAppoi__stude__10AB74EC">
             <End Role="Student" EntitySet="Student" />
             <End Role="TestAppointment" EntitySet="TestAppointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestQuest__quest__5224328E" Association="Self.FK__TestQuest__quest__5224328E">
+          <AssociationSet Name="FK__TestQuest__quest__269AB60B" Association="Self.FK__TestQuest__quest__269AB60B">
             <End Role="Question" EntitySet="Question" />
             <End Role="TestQuestion" EntitySet="TestQuestion" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestQuesti__test__51300E55" Association="Self.FK__TestQuesti__test__51300E55">
+          <AssociationSet Name="FK__TestQuesti__test__25A691D2" Association="Self.FK__TestQuesti__test__25A691D2">
             <End Role="Test" EntitySet="Test" />
             <End Role="TestQuestion" EntitySet="TestQuestion" />
           </AssociationSet>
@@ -530,9 +530,9 @@
           <Property Name="patronymic" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="roleId" Type="Int32" Nullable="false" />
           <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Role" Relationship="Self.FK__Account__roleId__0F624AF8" FromRole="Account" ToRole="Role" />
-          <NavigationProperty Name="TeacherWorkloads" Relationship="Self.FK__TeacherWo__teach__25518C17" FromRole="Account" ToRole="TeacherWorkload" />
-          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__respo__367C1819" FromRole="Account" ToRole="TestAppointment" />
+          <NavigationProperty Name="Role" Relationship="Self.FK__Account__roleId__7ABC33CD" FromRole="Account" ToRole="Role" />
+          <NavigationProperty Name="TeacherWorkloads" Relationship="Self.FK__TeacherWo__teach__090A5324" FromRole="Account" ToRole="TeacherWorkload" />
+          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__respo__119F9925" FromRole="Account" ToRole="TestAppointment" />
         </EntityType>
         <EntityType Name="Answer">
           <Key>
@@ -541,9 +541,9 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="executionAttempt" Type="Int32" Nullable="false" />
           <Property Name="question" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="ExecutionAttempt1" Relationship="Self.FK__Answer__executio__47A6A41B" FromRole="Answer" ToRole="ExecutionAttempt" />
-          <NavigationProperty Name="Question1" Relationship="Self.FK__Answer__question__489AC854" FromRole="Answer" ToRole="Question" />
-          <NavigationProperty Name="AnswerVariants" Relationship="Self.FK__AnswerVar__answe__4D5F7D71" FromRole="Answer" ToRole="AnswerVariant" />
+          <NavigationProperty Name="ExecutionAttempt1" Relationship="Self.FK__Answer__executio__1C1D2798" FromRole="Answer" ToRole="ExecutionAttempt" />
+          <NavigationProperty Name="Question1" Relationship="Self.FK__Answer__question__1D114BD1" FromRole="Answer" ToRole="Question" />
+          <NavigationProperty Name="AnswerVariants" Relationship="Self.FK__AnswerVar__answe__21D600EE" FromRole="Answer" ToRole="AnswerVariant" />
         </EntityType>
         <EntityType Name="AnswerVariant">
           <Key>
@@ -554,8 +554,8 @@
           <Property Name="answer" Type="Int32" Nullable="false" />
           <Property Name="variant" Type="Int32" Nullable="false" />
           <Property Name="variantText" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Answer1" Relationship="Self.FK__AnswerVar__answe__4D5F7D71" FromRole="AnswerVariant" ToRole="Answer" />
-          <NavigationProperty Name="Variant1" Relationship="Self.FK__AnswerVar__varia__4E53A1AA" FromRole="AnswerVariant" ToRole="Variant" />
+          <NavigationProperty Name="Answer1" Relationship="Self.FK__AnswerVar__answe__21D600EE" FromRole="AnswerVariant" ToRole="Answer" />
+          <NavigationProperty Name="Variant1" Relationship="Self.FK__AnswerVar__varia__22CA2527" FromRole="AnswerVariant" ToRole="Variant" />
         </EntityType>
         <EntityType Name="ExecutionAttempt">
           <Key>
@@ -564,16 +564,16 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="testAppointment" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Answers" Relationship="Self.FK__Answer__executio__47A6A41B" FromRole="ExecutionAttempt" ToRole="Answer" />
-          <NavigationProperty Name="TestAppointment1" Relationship="Self.FK__Execution__testA__395884C4" FromRole="ExecutionAttempt" ToRole="TestAppointment" />
+          <NavigationProperty Name="Answers" Relationship="Self.FK__Answer__executio__1C1D2798" FromRole="ExecutionAttempt" ToRole="Answer" />
+          <NavigationProperty Name="TestAppointment1" Relationship="Self.FK__Execution__testA__147C05D0" FromRole="ExecutionAttempt" ToRole="TestAppointment" />
         </EntityType>
         <EntityType Name="Group">
           <Key>
             <PropertyRef Name="number" />
           </Key>
           <Property Name="number" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Students" Relationship="Self.FK__Student__group__14270015" FromRole="Group" ToRole="Student" />
-          <NavigationProperty Name="StudyPrograms" Relationship="Self.FK__StudyProg__group__2180FB33" FromRole="Group" ToRole="StudyProgram" />
+          <NavigationProperty Name="Students" Relationship="Self.FK__Student__group__7F80E8EA" FromRole="Group" ToRole="Student" />
+          <NavigationProperty Name="StudyPrograms" Relationship="Self.FK__StudyProg__group__0539C240" FromRole="Group" ToRole="StudyProgram" />
         </EntityType>
         <EntityType Name="Question">
           <Key>
@@ -584,10 +584,10 @@
           <Property Name="hint" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="weight" Type="Double" Nullable="false" />
           <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Answers" Relationship="Self.FK__Answer__question__489AC854" FromRole="Question" ToRole="Answer" />
-          <NavigationProperty Name="QuestionType" Relationship="Self.FK__Question__type__44CA3770" FromRole="Question" ToRole="QuestionType" />
-          <NavigationProperty Name="QuestionVariants" Relationship="Self.FK__QuestionV__quest__55009F39" FromRole="Question" ToRole="QuestionVariant" />
-          <NavigationProperty Name="TestQuestions" Relationship="Self.FK__TestQuest__quest__5224328E" FromRole="Question" ToRole="TestQuestion" />
+          <NavigationProperty Name="Answers" Relationship="Self.FK__Answer__question__1D114BD1" FromRole="Question" ToRole="Answer" />
+          <NavigationProperty Name="QuestionType" Relationship="Self.FK__Question__type__1940BAED" FromRole="Question" ToRole="QuestionType" />
+          <NavigationProperty Name="QuestionVariants" Relationship="Self.FK__QuestionV__quest__297722B6" FromRole="Question" ToRole="QuestionVariant" />
+          <NavigationProperty Name="TestQuestions" Relationship="Self.FK__TestQuest__quest__269AB60B" FromRole="Question" ToRole="TestQuestion" />
         </EntityType>
         <EntityType Name="QuestionType">
           <Key>
@@ -595,7 +595,7 @@
           </Key>
           <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="isManyVariant" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="Questions" Relationship="Self.FK__Question__type__44CA3770" FromRole="QuestionType" ToRole="Question" />
+          <NavigationProperty Name="Questions" Relationship="Self.FK__Question__type__1940BAED" FromRole="QuestionType" ToRole="Question" />
         </EntityType>
         <EntityType Name="QuestionVariant">
           <Key>
@@ -605,8 +605,8 @@
           <Property Name="question" Type="Int32" Nullable="false" />
           <Property Name="variant" Type="Int32" Nullable="false" />
           <Property Name="isCorrect" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="Question1" Relationship="Self.FK__QuestionV__quest__55009F39" FromRole="QuestionVariant" ToRole="Question" />
-          <NavigationProperty Name="Variant1" Relationship="Self.FK__QuestionV__varia__55F4C372" FromRole="QuestionVariant" ToRole="Variant" />
+          <NavigationProperty Name="Question1" Relationship="Self.FK__QuestionV__quest__297722B6" FromRole="QuestionVariant" ToRole="Question" />
+          <NavigationProperty Name="Variant1" Relationship="Self.FK__QuestionV__varia__2A6B46EF" FromRole="QuestionVariant" ToRole="Variant" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -614,8 +614,8 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Accounts" Relationship="Self.FK__Account__roleId__0F624AF8" FromRole="Role" ToRole="Account" />
-          <NavigationProperty Name="Students" Relationship="Self.FK__Student__role__151B244E" FromRole="Role" ToRole="Student" />
+          <NavigationProperty Name="Accounts" Relationship="Self.FK__Account__roleId__7ABC33CD" FromRole="Role" ToRole="Account" />
+          <NavigationProperty Name="Students" Relationship="Self.FK__Student__role__00750D23" FromRole="Role" ToRole="Student" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
@@ -628,9 +628,9 @@
           <Property Name="firstName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="patronymic" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Group1" Relationship="Self.FK__Student__group__14270015" FromRole="Student" ToRole="Group" />
-          <NavigationProperty Name="Role1" Relationship="Self.FK__Student__role__151B244E" FromRole="Student" ToRole="Role" />
-          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__stude__3587F3E0" FromRole="Student" ToRole="TestAppointment" />
+          <NavigationProperty Name="Group1" Relationship="Self.FK__Student__group__7F80E8EA" FromRole="Student" ToRole="Group" />
+          <NavigationProperty Name="Role1" Relationship="Self.FK__Student__role__00750D23" FromRole="Student" ToRole="Role" />
+          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__stude__10AB74EC" FromRole="Student" ToRole="TestAppointment" />
         </EntityType>
         <EntityType Name="StudyProgram">
           <Key>
@@ -639,16 +639,16 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="group" Type="Int32" Nullable="false" />
           <Property Name="subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Group1" Relationship="Self.FK__StudyProg__group__2180FB33" FromRole="StudyProgram" ToRole="Group" />
-          <NavigationProperty Name="Subject1" Relationship="Self.FK__StudyProg__subje__22751F6C" FromRole="StudyProgram" ToRole="Subject" />
-          <NavigationProperty Name="TeacherWorkloads" Relationship="Self.FK__TeacherWo__progr__2645B050" FromRole="StudyProgram" ToRole="TeacherWorkload" />
+          <NavigationProperty Name="Group1" Relationship="Self.FK__StudyProg__group__0539C240" FromRole="StudyProgram" ToRole="Group" />
+          <NavigationProperty Name="Subject1" Relationship="Self.FK__StudyProg__subje__062DE679" FromRole="StudyProgram" ToRole="Subject" />
+          <NavigationProperty Name="TeacherWorkloads" Relationship="Self.FK__TeacherWo__progr__09FE775D" FromRole="StudyProgram" ToRole="TeacherWorkload" />
         </EntityType>
         <EntityType Name="Subject">
           <Key>
             <PropertyRef Name="name" />
           </Key>
           <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="StudyPrograms" Relationship="Self.FK__StudyProg__subje__22751F6C" FromRole="Subject" ToRole="StudyProgram" />
+          <NavigationProperty Name="StudyPrograms" Relationship="Self.FK__StudyProg__subje__062DE679" FromRole="Subject" ToRole="StudyProgram" />
         </EntityType>
         <EntityType Name="TeacherWorkload">
           <Key>
@@ -657,9 +657,9 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="teacher" Type="Int32" Nullable="false" />
           <Property Name="program" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Account" Relationship="Self.FK__TeacherWo__teach__25518C17" FromRole="TeacherWorkload" ToRole="Account" />
-          <NavigationProperty Name="StudyProgram" Relationship="Self.FK__TeacherWo__progr__2645B050" FromRole="TeacherWorkload" ToRole="StudyProgram" />
-          <NavigationProperty Name="Tests" Relationship="Self.FK__Test__teacher__31B762FC" FromRole="TeacherWorkload" ToRole="Test" />
+          <NavigationProperty Name="Account" Relationship="Self.FK__TeacherWo__teach__090A5324" FromRole="TeacherWorkload" ToRole="Account" />
+          <NavigationProperty Name="StudyProgram" Relationship="Self.FK__TeacherWo__progr__09FE775D" FromRole="TeacherWorkload" ToRole="StudyProgram" />
+          <NavigationProperty Name="Tests" Relationship="Self.FK__Test__teacher__0CDAE408" FromRole="TeacherWorkload" ToRole="Test" />
         </EntityType>
         <EntityType Name="Test">
           <Key>
@@ -675,9 +675,9 @@
           <Property Name="Min3" Type="Double" Nullable="false" />
           <Property Name="defaultExecutionTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="defaultAttemptCount" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="TeacherWorkload" Relationship="Self.FK__Test__teacher__31B762FC" FromRole="Test" ToRole="TeacherWorkload" />
-          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__numbe__3493CFA7" FromRole="Test" ToRole="TestAppointment" />
-          <NavigationProperty Name="TestQuestions" Relationship="Self.FK__TestQuesti__test__51300E55" FromRole="Test" ToRole="TestQuestion" />
+          <NavigationProperty Name="TeacherWorkload" Relationship="Self.FK__Test__teacher__0CDAE408" FromRole="Test" ToRole="TeacherWorkload" />
+          <NavigationProperty Name="TestAppointments" Relationship="Self.FK__TestAppoi__numbe__0FB750B3" FromRole="Test" ToRole="TestAppointment" />
+          <NavigationProperty Name="TestQuestions" Relationship="Self.FK__TestQuesti__test__25A691D2" FromRole="Test" ToRole="TestQuestion" />
         </EntityType>
         <EntityType Name="TestAppointment">
           <Key>
@@ -691,10 +691,10 @@
           <Property Name="endTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="executionTime" Type="Int32" Nullable="false" />
           <Property Name="numberOfAttempts" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Account" Relationship="Self.FK__TestAppoi__respo__367C1819" FromRole="TestAppointment" ToRole="Account" />
-          <NavigationProperty Name="ExecutionAttempts" Relationship="Self.FK__Execution__testA__395884C4" FromRole="TestAppointment" ToRole="ExecutionAttempt" />
-          <NavigationProperty Name="Student1" Relationship="Self.FK__TestAppoi__stude__3587F3E0" FromRole="TestAppointment" ToRole="Student" />
-          <NavigationProperty Name="Test1" Relationship="Self.FK__TestAppoi__numbe__3493CFA7" FromRole="TestAppointment" ToRole="Test" />
+          <NavigationProperty Name="Account" Relationship="Self.FK__TestAppoi__respo__119F9925" FromRole="TestAppointment" ToRole="Account" />
+          <NavigationProperty Name="ExecutionAttempts" Relationship="Self.FK__Execution__testA__147C05D0" FromRole="TestAppointment" ToRole="ExecutionAttempt" />
+          <NavigationProperty Name="Student1" Relationship="Self.FK__TestAppoi__stude__10AB74EC" FromRole="TestAppointment" ToRole="Student" />
+          <NavigationProperty Name="Test1" Relationship="Self.FK__TestAppoi__numbe__0FB750B3" FromRole="TestAppointment" ToRole="Test" />
         </EntityType>
         <EntityType Name="TestQuestion">
           <Key>
@@ -703,8 +703,8 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="test" Type="Int32" Nullable="false" />
           <Property Name="question" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Question1" Relationship="Self.FK__TestQuest__quest__5224328E" FromRole="TestQuestion" ToRole="Question" />
-          <NavigationProperty Name="Test1" Relationship="Self.FK__TestQuesti__test__51300E55" FromRole="TestQuestion" ToRole="Test" />
+          <NavigationProperty Name="Question1" Relationship="Self.FK__TestQuest__quest__269AB60B" FromRole="TestQuestion" ToRole="Question" />
+          <NavigationProperty Name="Test1" Relationship="Self.FK__TestQuesti__test__25A691D2" FromRole="TestQuestion" ToRole="Test" />
         </EntityType>
         <EntityType Name="Variant">
           <Key>
@@ -712,10 +712,10 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="AnswerVariants" Relationship="Self.FK__AnswerVar__varia__4E53A1AA" FromRole="Variant" ToRole="AnswerVariant" />
-          <NavigationProperty Name="QuestionVariants" Relationship="Self.FK__QuestionV__varia__55F4C372" FromRole="Variant" ToRole="QuestionVariant" />
+          <NavigationProperty Name="AnswerVariants" Relationship="Self.FK__AnswerVar__varia__22CA2527" FromRole="Variant" ToRole="AnswerVariant" />
+          <NavigationProperty Name="QuestionVariants" Relationship="Self.FK__QuestionV__varia__2A6B46EF" FromRole="Variant" ToRole="QuestionVariant" />
         </EntityType>
-        <Association Name="FK__Account__roleId__0F624AF8">
+        <Association Name="FK__Account__roleId__7ABC33CD">
           <End Role="Role" Type="Self.Role" Multiplicity="1" />
           <End Role="Account" Type="Self.Account" Multiplicity="*" />
           <ReferentialConstraint>
@@ -727,7 +727,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TeacherWo__teach__25518C17">
+        <Association Name="FK__TeacherWo__teach__090A5324">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="*" />
           <ReferentialConstraint>
@@ -739,7 +739,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__respo__367C1819">
+        <Association Name="FK__TestAppoi__respo__119F9925">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -751,7 +751,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Answer__executio__47A6A41B">
+        <Association Name="FK__Answer__executio__1C1D2798">
           <End Role="ExecutionAttempt" Type="Self.ExecutionAttempt" Multiplicity="1" />
           <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
           <ReferentialConstraint>
@@ -763,7 +763,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Answer__question__489AC854">
+        <Association Name="FK__Answer__question__1D114BD1">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
           <ReferentialConstraint>
@@ -775,7 +775,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__AnswerVar__answe__4D5F7D71">
+        <Association Name="FK__AnswerVar__answe__21D600EE">
           <End Role="Answer" Type="Self.Answer" Multiplicity="1" />
           <End Role="AnswerVariant" Type="Self.AnswerVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -787,7 +787,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__AnswerVar__varia__4E53A1AA">
+        <Association Name="FK__AnswerVar__varia__22CA2527">
           <End Role="Variant" Type="Self.Variant" Multiplicity="1" />
           <End Role="AnswerVariant" Type="Self.AnswerVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -799,7 +799,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Execution__testA__395884C4">
+        <Association Name="FK__Execution__testA__147C05D0">
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="1" />
           <End Role="ExecutionAttempt" Type="Self.ExecutionAttempt" Multiplicity="*" />
           <ReferentialConstraint>
@@ -811,7 +811,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__group__14270015">
+        <Association Name="FK__Student__group__7F80E8EA">
           <End Role="Group" Type="Self.Group" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -823,7 +823,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__StudyProg__group__2180FB33">
+        <Association Name="FK__StudyProg__group__0539C240">
           <End Role="Group" Type="Self.Group" Multiplicity="1" />
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="*" />
           <ReferentialConstraint>
@@ -835,7 +835,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Question__type__44CA3770">
+        <Association Name="FK__Question__type__1940BAED">
           <End Role="QuestionType" Type="Self.QuestionType" Multiplicity="1" />
           <End Role="Question" Type="Self.Question" Multiplicity="*" />
           <ReferentialConstraint>
@@ -847,7 +847,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__QuestionV__quest__55009F39">
+        <Association Name="FK__QuestionV__quest__297722B6">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="QuestionVariant" Type="Self.QuestionVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -859,7 +859,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestQuest__quest__5224328E">
+        <Association Name="FK__TestQuest__quest__269AB60B">
           <End Role="Question" Type="Self.Question" Multiplicity="1" />
           <End Role="TestQuestion" Type="Self.TestQuestion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -871,7 +871,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__QuestionV__varia__55F4C372">
+        <Association Name="FK__QuestionV__varia__2A6B46EF">
           <End Role="Variant" Type="Self.Variant" Multiplicity="1" />
           <End Role="QuestionVariant" Type="Self.QuestionVariant" Multiplicity="*" />
           <ReferentialConstraint>
@@ -883,7 +883,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student__role__151B244E">
+        <Association Name="FK__Student__role__00750D23">
           <End Role="Role" Type="Self.Role" Multiplicity="1" />
           <End Role="Student" Type="Self.Student" Multiplicity="*" />
           <ReferentialConstraint>
@@ -895,7 +895,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__stude__3587F3E0">
+        <Association Name="FK__TestAppoi__stude__10AB74EC">
           <End Role="Student" Type="Self.Student" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -907,7 +907,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__StudyProg__subje__22751F6C">
+        <Association Name="FK__StudyProg__subje__062DE679">
           <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="*" />
           <ReferentialConstraint>
@@ -919,7 +919,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TeacherWo__progr__2645B050">
+        <Association Name="FK__TeacherWo__progr__09FE775D">
           <End Role="StudyProgram" Type="Self.StudyProgram" Multiplicity="1" />
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="*" />
           <ReferentialConstraint>
@@ -931,7 +931,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Test__teacher__31B762FC">
+        <Association Name="FK__Test__teacher__0CDAE408">
           <End Role="TeacherWorkload" Type="Self.TeacherWorkload" Multiplicity="1" />
           <End Role="Test" Type="Self.Test" Multiplicity="*" />
           <ReferentialConstraint>
@@ -943,7 +943,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestAppoi__numbe__3493CFA7">
+        <Association Name="FK__TestAppoi__numbe__0FB750B3">
           <End Role="Test" Type="Self.Test" Multiplicity="1" />
           <End Role="TestAppointment" Type="Self.TestAppointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -955,7 +955,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TestQuesti__test__51300E55">
+        <Association Name="FK__TestQuesti__test__25A691D2">
           <End Role="Test" Type="Self.Test" Multiplicity="1" />
           <End Role="TestQuestion" Type="Self.TestQuestion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -985,87 +985,87 @@
           <EntitySet Name="TestAppointments" EntityType="Self.TestAppointment" />
           <EntitySet Name="TestQuestions" EntityType="Self.TestQuestion" />
           <EntitySet Name="Variants" EntityType="Self.Variant" />
-          <AssociationSet Name="FK__Account__roleId__0F624AF8" Association="Self.FK__Account__roleId__0F624AF8">
+          <AssociationSet Name="FK__Account__roleId__7ABC33CD" Association="Self.FK__Account__roleId__7ABC33CD">
             <End Role="Role" EntitySet="Roles" />
             <End Role="Account" EntitySet="Accounts" />
           </AssociationSet>
-          <AssociationSet Name="FK__TeacherWo__teach__25518C17" Association="Self.FK__TeacherWo__teach__25518C17">
+          <AssociationSet Name="FK__TeacherWo__teach__090A5324" Association="Self.FK__TeacherWo__teach__090A5324">
             <End Role="Account" EntitySet="Accounts" />
             <End Role="TeacherWorkload" EntitySet="TeacherWorkloads" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__respo__367C1819" Association="Self.FK__TestAppoi__respo__367C1819">
+          <AssociationSet Name="FK__TestAppoi__respo__119F9925" Association="Self.FK__TestAppoi__respo__119F9925">
             <End Role="Account" EntitySet="Accounts" />
             <End Role="TestAppointment" EntitySet="TestAppointments" />
           </AssociationSet>
-          <AssociationSet Name="FK__Answer__executio__47A6A41B" Association="Self.FK__Answer__executio__47A6A41B">
+          <AssociationSet Name="FK__Answer__executio__1C1D2798" Association="Self.FK__Answer__executio__1C1D2798">
             <End Role="ExecutionAttempt" EntitySet="ExecutionAttempts" />
             <End Role="Answer" EntitySet="Answers" />
           </AssociationSet>
-          <AssociationSet Name="FK__Answer__question__489AC854" Association="Self.FK__Answer__question__489AC854">
+          <AssociationSet Name="FK__Answer__question__1D114BD1" Association="Self.FK__Answer__question__1D114BD1">
             <End Role="Question" EntitySet="Questions" />
             <End Role="Answer" EntitySet="Answers" />
           </AssociationSet>
-          <AssociationSet Name="FK__AnswerVar__answe__4D5F7D71" Association="Self.FK__AnswerVar__answe__4D5F7D71">
+          <AssociationSet Name="FK__AnswerVar__answe__21D600EE" Association="Self.FK__AnswerVar__answe__21D600EE">
             <End Role="Answer" EntitySet="Answers" />
             <End Role="AnswerVariant" EntitySet="AnswerVariants" />
           </AssociationSet>
-          <AssociationSet Name="FK__AnswerVar__varia__4E53A1AA" Association="Self.FK__AnswerVar__varia__4E53A1AA">
+          <AssociationSet Name="FK__AnswerVar__varia__22CA2527" Association="Self.FK__AnswerVar__varia__22CA2527">
             <End Role="Variant" EntitySet="Variants" />
             <End Role="AnswerVariant" EntitySet="AnswerVariants" />
           </AssociationSet>
-          <AssociationSet Name="FK__Execution__testA__395884C4" Association="Self.FK__Execution__testA__395884C4">
+          <AssociationSet Name="FK__Execution__testA__147C05D0" Association="Self.FK__Execution__testA__147C05D0">
             <End Role="TestAppointment" EntitySet="TestAppointments" />
             <End Role="ExecutionAttempt" EntitySet="ExecutionAttempts" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__group__14270015" Association="Self.FK__Student__group__14270015">
+          <AssociationSet Name="FK__Student__group__7F80E8EA" Association="Self.FK__Student__group__7F80E8EA">
             <End Role="Group" EntitySet="Groups" />
             <End Role="Student" EntitySet="Students" />
           </AssociationSet>
-          <AssociationSet Name="FK__StudyProg__group__2180FB33" Association="Self.FK__StudyProg__group__2180FB33">
+          <AssociationSet Name="FK__StudyProg__group__0539C240" Association="Self.FK__StudyProg__group__0539C240">
             <End Role="Group" EntitySet="Groups" />
             <End Role="StudyProgram" EntitySet="StudyPrograms" />
           </AssociationSet>
-          <AssociationSet Name="FK__Question__type__44CA3770" Association="Self.FK__Question__type__44CA3770">
+          <AssociationSet Name="FK__Question__type__1940BAED" Association="Self.FK__Question__type__1940BAED">
             <End Role="QuestionType" EntitySet="QuestionTypes" />
             <End Role="Question" EntitySet="Questions" />
           </AssociationSet>
-          <AssociationSet Name="FK__QuestionV__quest__55009F39" Association="Self.FK__QuestionV__quest__55009F39">
+          <AssociationSet Name="FK__QuestionV__quest__297722B6" Association="Self.FK__QuestionV__quest__297722B6">
             <End Role="Question" EntitySet="Questions" />
             <End Role="QuestionVariant" EntitySet="QuestionVariants" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestQuest__quest__5224328E" Association="Self.FK__TestQuest__quest__5224328E">
+          <AssociationSet Name="FK__TestQuest__quest__269AB60B" Association="Self.FK__TestQuest__quest__269AB60B">
             <End Role="Question" EntitySet="Questions" />
             <End Role="TestQuestion" EntitySet="TestQuestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__QuestionV__varia__55F4C372" Association="Self.FK__QuestionV__varia__55F4C372">
+          <AssociationSet Name="FK__QuestionV__varia__2A6B46EF" Association="Self.FK__QuestionV__varia__2A6B46EF">
             <End Role="Variant" EntitySet="Variants" />
             <End Role="QuestionVariant" EntitySet="QuestionVariants" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student__role__151B244E" Association="Self.FK__Student__role__151B244E">
+          <AssociationSet Name="FK__Student__role__00750D23" Association="Self.FK__Student__role__00750D23">
             <End Role="Role" EntitySet="Roles" />
             <End Role="Student" EntitySet="Students" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__stude__3587F3E0" Association="Self.FK__TestAppoi__stude__3587F3E0">
+          <AssociationSet Name="FK__TestAppoi__stude__10AB74EC" Association="Self.FK__TestAppoi__stude__10AB74EC">
             <End Role="Student" EntitySet="Students" />
             <End Role="TestAppointment" EntitySet="TestAppointments" />
           </AssociationSet>
-          <AssociationSet Name="FK__StudyProg__subje__22751F6C" Association="Self.FK__StudyProg__subje__22751F6C">
+          <AssociationSet Name="FK__StudyProg__subje__062DE679" Association="Self.FK__StudyProg__subje__062DE679">
             <End Role="Subject" EntitySet="Subjects" />
             <End Role="StudyProgram" EntitySet="StudyPrograms" />
           </AssociationSet>
-          <AssociationSet Name="FK__TeacherWo__progr__2645B050" Association="Self.FK__TeacherWo__progr__2645B050">
+          <AssociationSet Name="FK__TeacherWo__progr__09FE775D" Association="Self.FK__TeacherWo__progr__09FE775D">
             <End Role="StudyProgram" EntitySet="StudyPrograms" />
             <End Role="TeacherWorkload" EntitySet="TeacherWorkloads" />
           </AssociationSet>
-          <AssociationSet Name="FK__Test__teacher__31B762FC" Association="Self.FK__Test__teacher__31B762FC">
+          <AssociationSet Name="FK__Test__teacher__0CDAE408" Association="Self.FK__Test__teacher__0CDAE408">
             <End Role="TeacherWorkload" EntitySet="TeacherWorkloads" />
             <End Role="Test" EntitySet="Tests" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestAppoi__numbe__3493CFA7" Association="Self.FK__TestAppoi__numbe__3493CFA7">
+          <AssociationSet Name="FK__TestAppoi__numbe__0FB750B3" Association="Self.FK__TestAppoi__numbe__0FB750B3">
             <End Role="Test" EntitySet="Tests" />
             <End Role="TestAppointment" EntitySet="TestAppointments" />
           </AssociationSet>
-          <AssociationSet Name="FK__TestQuesti__test__51300E55" Association="Self.FK__TestQuesti__test__51300E55">
+          <AssociationSet Name="FK__TestQuesti__test__25A691D2" Association="Self.FK__TestQuesti__test__25A691D2">
             <End Role="Test" EntitySet="Tests" />
             <End Role="TestQuestion" EntitySet="TestQuestions" />
           </AssociationSet>

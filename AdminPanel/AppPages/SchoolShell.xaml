@@ -18,8 +18,8 @@
                 <DataTemplate>
                     <TextBlock>                     
                             <Run Text="ФИО:"/>                 
-                            <Run Text="{Binding last_name}"/>
-                            <Run Text="{Binding first_name}" />
+                            <Run Text="{Binding lastName}"/>
+                            <Run Text="{Binding firstName}" />
                             <Run Text="{Binding patronymic}" />
                         
                         <LineBreak />
@@ -36,7 +36,7 @@
 
         <StackPanel Grid.Row="2">
             <Button Content="Добавить" Click="Button_Click"/>
-            <Button Content="Удалить" />
+            <Button Content="Удалить" Click="Button_Delete" />
             <Button Content="Изменить"/>
         </StackPanel>
     </Grid>

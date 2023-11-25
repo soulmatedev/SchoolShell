@@ -41,7 +41,7 @@ namespace AdminPanel.AppPages
 
             if (MainWindow.connection.Accounts.Any(x => x.username == Account.username && x.password == Account.password))
             {
-                MainWindow.pageContainer.Navigate(PageController.schoolShell);
+                MainWindow.pageContainer.Navigate(PageController.SchoolShell);
             }
             else
             {

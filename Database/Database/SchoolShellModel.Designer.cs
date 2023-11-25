@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\soulmate\source\repos\SchoolShell\Database\SchoolShellModel.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\student\source\repos\soulmatedev\SchoolShell2\Database\Database\SchoolShellModel.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

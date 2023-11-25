@@ -27,8 +27,18 @@ namespace AdminPanel
         public MainWindow()
         {
             InitializeComponent();
-
-            AppFrame.Navigate(AppPages.PageController.Authorization);
+            connection= new Database.SchoolShellEntities();
+            pageContainer = AppFrame;
+            Accounts= new ObservableCollection<Database.Account>();
+            Role= new ObservableCollection<Database.Role>();
+            if (connection.Accounts.FirstOrDefault(x => x.roleId == 1) == null)
+            {
+                AppFrame.Navigate(AppPages.PageController.AdminCreator);
+            }
+            else
+            {
+                AppFrame.Navigate(AppPages.PageController.Authorization);
+            }
 
         }
 

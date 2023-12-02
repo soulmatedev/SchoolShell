@@ -13,46 +13,51 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
-            <StackPanel Orientation="Vertical" Margin="16">
+        <StackPanel Orientation="Vertical" Margin="16">
 
-                <StackPanel Margin="0 0 0 12">
-                    <TextBlock FontSize="18" FontWeight="Bold" Opacity="0.8" Text="Создайте пользователя" />
-                </StackPanel>
-
-                <StackPanel>
-                    <TextBlock FontSize="10" Text="Username"/>
-                    <TextBox Name="tbUsername" Margin="0 0 0 8"/>
-
-                    <TextBlock FontSize="10" Text="Фамилия"/>
-                    <TextBox Name="tbLastName" Margin="0 0 0 8"/>
-
-                    <TextBlock FontSize="10" Text="Имя"/>
-                    <TextBox Name="tbFirstName" Margin="0 0 0 8"/>
-
-                    <TextBlock FontSize="10" Text="Отчество"/>
-                    <TextBox Name="tbPatronymic" Margin="0 0 0 8"/>
-
-                    <TextBlock FontSize="10" Text="Пароль"/>
-                    <TextBox Name="tbPassword" Margin="0 0 0 16"/>
-
-                    <TextBlock FontSize="10" Text="Role"/>
-                    <ComboBox Name="cbRole"  Margin="0 0 0 16">
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock>                                    
-                                    <Run Text="{Binding name}"/>
-                                </TextBlock>
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-                </StackPanel>
-
-                <StackPanel>
-                    <Button FontSize="10" Click="addAdminClick">Создать</Button>
-                </StackPanel>
-
+            <StackPanel Margin="0 0 0 12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="18" FontWeight="Bold" Opacity="0.8" Text="Создайте пользователя" Grid.Column="0"/>
+                    <Button Content="Выйти" Grid.Column="1" Width="100" HorizontalAlignment="Right" Click="Button_Click" Background="LightSkyBlue"/>
+                </Grid>
             </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontSize="10" Text="Username" Margin="0 0 0 4"/>
+                <TextBox Name="tbUsername" Margin="0 0 0 8"/>
+
+                <TextBlock FontSize="10" Text="Фамилия" Margin="0 0 0 4"/>
+                <TextBox Name="tbLastName" Margin="0 0 0 8"/>
+
+                <TextBlock FontSize="10" Text="Имя" Margin="0 0 0 4"/>
+                <TextBox Name="tbFirstName" Margin="0 0 0 8"/>
+
+                <TextBlock FontSize="10" Text="Отчество" Margin="0 0 0 4"/>
+                <TextBox Name="tbPatronymic" Margin="0 0 0 8"/>
+
+                <TextBlock FontSize="10" Text="Пароль" Margin="0 0 0 4"/>
+                <TextBox Name="tbPassword" Margin="0 0 0 16"/>
+
+                <TextBlock FontSize="10" Text="Role" Margin="0 0 0 4"/>
+                <ComboBox Name="cbRole"  Margin="0 0 0 16">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>                                    
+                                    <Run Text="{Binding name}"/>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Button FontSize="10" Click="addAdminClick" Background="LightSkyBlue">Создать</Button>
+            </StackPanel>
+
         </StackPanel>
     </Grid>
 </Page>

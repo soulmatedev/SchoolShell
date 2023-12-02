@@ -60,5 +60,6 @@ namespace AdminPanel.AppPages
                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
     }
 }

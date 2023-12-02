@@ -22,9 +22,9 @@ namespace AdminPanel.AppPages
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_GoBack(object sender, RoutedEventArgs e)
         {
-            MainWindow.pageContainer.Navigate(PageController.Authorization);
+            NavigationService.GoBack();
         }
     }
 }

@@ -13,12 +13,12 @@
             <RowDefinition/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        
-        <StackPanel Orientation="Vertical">
-            <TextBlock>HeadTeacher</TextBlock>
-            <Button Content="Добавить" Click="Button_Click"/>
-            <Button Content="Удалить" Click="Button_Delete" />
-            <Button Content="Изменить" Click="OnClickEdit"/>
+
+        <StackPanel Orientation="Vertical" Margin="10" VerticalAlignment="Center" Width="500">
+            <Button Content="Управление учителями" Margin="10" Height="30" Click="onTeacherPage" Background="LightSkyBlue"/>
+            <Button Content="Управление классами" Margin="10" Height="30" Background="LightSkyBlue"/>
+            <Button Content="Управление учениками" Margin="10" Height="30" Background="LightSkyBlue"/>
+            <Button Content="Управление дисциплинами" Margin="10" Height="30" Background="LightSkyBlue"/>
         </StackPanel>
     </Grid>
 </Page>

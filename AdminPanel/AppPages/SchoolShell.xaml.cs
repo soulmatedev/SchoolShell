@@ -59,5 +59,9 @@ namespace AdminPanel.AppPages
 
             Change(selectedAccount);
         }
+        private void Button_GoBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }   

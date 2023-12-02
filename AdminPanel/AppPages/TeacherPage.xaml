@@ -9,7 +9,25 @@
       Title="TeacherPage">
 
     <Grid Background="White">
-        <TextBlock Text="Teacher"/>
-        <Button Content="Выйти" Click="Button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="18" FontWeight="Bold" Opacity="0.8" Text="Учителя"  Grid.Column="0"/>
+            <Button Content="Выйти" Grid.Column="1" Width="100" HorizontalAlignment="Right"  Background="LightSkyBlue" Click="Button_GoBack"/>
+        </Grid>
+        </StackPanel>
+
+        <StackPanel Margin="10" VerticalAlignment="Bottom">
+            <Button Content="Добавить" Margin="4" Background="LightSkyBlue"/>
+            <Button Content="Удалить" Margin="4" Background="LightSkyBlue"/>
+            <Button Content="Изменить" Margin="4" Background="LightSkyBlue"/>
+        </StackPanel>
+       
     </Grid>
 </Page>

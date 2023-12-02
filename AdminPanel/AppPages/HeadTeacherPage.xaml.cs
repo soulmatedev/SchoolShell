@@ -15,14 +15,16 @@ using System.Windows.Shapes;
 
 namespace AdminPanel.AppPages
 {
-    /// <summary>
-    /// Логика взаимодействия для HeadTeacherPage.xaml
-    /// </summary>
     public partial class HeadTeacherPage : Page
     {
         public HeadTeacherPage()
         {
             InitializeComponent();
+        }
+
+        private void onTeacherPage(object sender, RoutedEventArgs e)
+        {
+            MainWindow.pageContainer.Navigate(PageController.TeacherPage);
         }
     }
 }

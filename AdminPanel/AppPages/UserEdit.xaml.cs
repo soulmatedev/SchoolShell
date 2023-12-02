@@ -44,5 +44,10 @@ namespace AdminPanel.AppPages
                 NavigationService.GoBack();
             }
         }
+
+        private void Button_GoBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
